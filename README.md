@@ -5,7 +5,7 @@
 |
 <b><a href="#experiments">Experiments</a></b>
 |
-<b><a href="#results">Results & Policy Implications</a></b>
+<b><a href="#results & policy implications">Results & Policy Implications</a></b>
 </p>
 
 
