@@ -33,7 +33,7 @@ Notebooks for data pre-processing:
 - [Data Extraction](https://github.com/Hertie-Thesis-Halkenhaeusser-Rabe/Thesis-Code-Base/blob/main/scripts/01_Data_Extraction.ipynb)
 - [Separation of Label Files](https://github.com/Hertie-Thesis-Halkenhaeusser-Rabe/Thesis-Code-Base/blob/main/scripts/03_Separate_Labels_Files.ipynb)
 
-Note: Parts of the data (namely for locations in the US and New Zealand) are publicly available [HERE](https://figshare.com/articles/dataset/Electric_Transmission_Infrastructure_Satellite_Imagery_Dataset_for_Computer_Vision/14935434)
+Note: Parts of the data (namely for locations in the US and New Zealand) are publicly available [here.](https://figshare.com/articles/dataset/Electric_Transmission_Infrastructure_Satellite_Imagery_Dataset_for_Computer_Vision/14935434)
 
 ### Downsampling
 
@@ -45,7 +45,7 @@ To avoid aliasing artefacts in the downsampled images, which are common in simul
   <img src="https://github.com/Hertie-Thesis-Halkenhaeusser-Rabe/Thesis-Code-Base/blob/main/figures/image_downsampled.png">
 </p>
 
-The notebook for downsampling can be found [here](https://github.com/Hertie-Thesis-Halkenhaeusser-Rabe/Thesis-Code-Base/blob/main/scripts/02_Downsampling.ipynb)
+The notebook for downsampling can be found [here.](https://github.com/Hertie-Thesis-Halkenhaeusser-Rabe/Thesis-Code-Base/blob/main/scripts/02_Downsampling.ipynb)
 
 
 ## Experiments
