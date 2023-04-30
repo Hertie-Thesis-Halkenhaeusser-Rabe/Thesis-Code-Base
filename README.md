@@ -1,11 +1,11 @@
 <p align="center">
-<b><a href="##summary">Summary</a></b>
+<b><a href="#summary">Summary</a></b>
 |
-<b><a href="##methodology">Methodology</a></b>
+<b><a href="#methodology">Methodology</a></b>
 |
 <b><a href="#experiments">Experiments</a></b>
 |
-<b><a href="#results-&-policy-implications">Results & Policy Implications</a></b>
+<b><a href="#results">Results & Policy Implications</a></b>
 </p>
 
 
