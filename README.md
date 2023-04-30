@@ -28,7 +28,7 @@ Accurate data about the structure of the electricity grid is crucial for all sta
 We employ the data used in [(Huang et al. 2021)](https://arxiv.org/abs/2101.06390), which is overhead imagery collected by drones and satellites. The images are taken in various locations across the world including New Zealand, the USA, China, Sudan, and Mexico. Within the respective countries, different locations are included. The dataset consists of 512 individual files that each contain some kind of electricity grid tower, either _Transmission_, _Distribution_, or _Other_ towers. In contrast to [(Huang et al. 2021)](https://arxiv.org/abs/2101.06390), who only use data from the US and New Zealand, we include all locations for which data is available at a resolution < 30 cm/pixel to ensure that our approach is applicable across various geographic locations. To ensure comparison with their results and to provide comparability between locations, all images are brought to a base resolution of 30 cm/pixel.
 
 ![Example Images](https://github.com/Hertie-Thesis-Halkenhaeusser-Rabe/Thesis-Code-Base/blob/main/figures/example_images_dataset.png)
-*Example Images from the dataset visualizing diverse locations and tower sizes*
+
 
 
 Notebooks for data pre-processing:
@@ -45,7 +45,7 @@ Downsampling as defined in this work is the decrease of spatial resolution as me
 To avoid aliasing artefacts in the downsampled images, which are common in simulated low-resolution imagery, we use an approach which additionally smoothes over the imagery with a Gaussian kernel and images are then downsampled using bilinear interpolation.
 
 ![Downsampling](https://github.com/Hertie-Thesis-Halkenhaeusser-Rabe/Thesis-Code-Base/blob/main/figures/image_downsampled.png)
-*Example image is downsampled from the 12 cm/pixel original resolution to 30 cm/pixel, 50 cm/pixel, 70 cm/pixel and 100 cm/pixel (left to right). Ground truth bounding boxes are shown for the two towers in the image*
+
 
 The notebook for downsampling can be found [here.](https://github.com/Hertie-Thesis-Halkenhaeusser-Rabe/Thesis-Code-Base/blob/main/scripts/02_Downsampling.ipynb)
 
