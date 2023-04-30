@@ -34,7 +34,7 @@ Notebooks for data pre-processing:
 - [Separation of Label Files](https://github.com/Hertie-Thesis-Halkenhaeusser-Rabe/Thesis-Code-Base/blob/main/scripts/03_Separate_Labels_Files.ipynb)
 
 
-_Note: Parts of the data (namely for locations in the US and New Zealand) are publicly available [here.](https://figshare.com/articles/dataset/Electric_Transmission_Infrastructure_Satellite_Imagery_Dataset_for_Computer_Vision/14935434)_
+_Note: Parts of the data (for locations in the US and New Zealand) are publicly available [here.](https://figshare.com/articles/dataset/Electric_Transmission_Infrastructure_Satellite_Imagery_Dataset_for_Computer_Vision/14935434)_
 
 ### Downsampling
 
