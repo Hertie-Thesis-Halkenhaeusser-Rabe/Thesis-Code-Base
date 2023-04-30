@@ -50,15 +50,76 @@ The notebook for downsampling can be found [here.](https://github.com/Hertie-The
 
 ## Experiments
 
+## Experiments
+
+
 ### Experiment 1
+<p align="center">
+<b><a href=scripts/07_A_Experiment_1_5.ipynb>Training</a></b>
+|
+<b><a href=scripts/08_Training_Analysis.ipynb>Training Analysis</a></b>
+|
+<b><a href=scripts/09_Evaluate_on_test.ipynb>Test Results</a></b>
+</p>
 
-\insert timeline image and basic results
+To investigate the impact of resolution on the capability to detect energy infrastructure using deep learning, we evaluate the performances of fine-tuned models on increasingly downsampled images of the same base data. 
 
-### Experiment 2
+![Timeline Experiment 1](figures/experiment_1_timeline.png)
 
-...
+Overall, the experiments yield strong evidence for a reduction in the detector's performance at lower levels of resolution. Nevertheless, the results are not conclusive enough to set a definitive threshold below which object detection of electricity infrastructure is no longer possible. The model performance is limited by a number of factors inhibiting the network's ability to achieve high performance, including the heterogeneity of the locations both in training and in testing data, and data quality. Further, capacity constraints on memory introduced erratic metric behaviour during hyperparameter tuning. 
+
+![Timeline Experiment 1](figures/res_ap50_testset.png)
+
+<!-- You can explore the code for Experiment 1 in these Notebooks:
+- [Training](scripts/07_A_Experiment_1_5.ipynb)
+- [Trainnig Analysis](scripts/08_Training_Analysis.ipynb)
+- [Test Results](scripts/09_Evaluate_on_test.ipynb) -->
+
+### Experiment 2 
+<p align="center">
+<b><a href=scripts/10_Experiment_2.ipynb>Full Code</a></b>
+</p>
+
+Within this work, we aim to make recommendations about the composition of potential training data to allow for predictions in a particular region of interest. One of the limitations in Experiment 1 is the model's inability to fit the heterogeneous data provided in the training set. One dimension of this heterogeneity consists of the different locations and the context they place the towers in. To understand the ability of the network to model a more homogeneous dataset and to then generalize to further datasets, we train a model for each location and test it on the other locations. As a third data-handling scheme, we employ a Leave-One-Out strategy in which we train on all but one location and test on the other.
+
+![Timeline Experiment 2](figures/experiment_2_timeline.png)
+
+__Individual Models.__
+The models' performance is similar compared to the first model but drops on the out-of-sample test sets due to the differences in training data heterogeneity, colour distributions, and rural vs. urban divide. The results show the data differ in measurable dimensions that negatively affect the out-of-sample performances. The data differ in measurable dimensions that negatively affect the out-of-sample performances. 
+Hence, any - even if futile - attempt to use data from a country to estimate the power infrastructure in another should aim to approximate the natural environment of their target. It should further allow the set to be diverse enough to overlap with the distributions of the test locations.
+
+![Individual Model Results](figures/exp2/exp2_results.png)
+
+__Leave-One-Out Models.__
+The LOO results are further evidence of the models' inabilities to generalise outside their training data. The effects of adding and removing individual countries from the combination are in line with the exploration of colour distributions above. 
+
+![Leave-One-Out Model Results](figures/exp2/exp2_leave_one_out.png)
+
 
 ### Experiment 3
+
+<p align="center">
+<b><a href=scripts/11_A_Experiment_3.ipynb>Preprocessing</a></b>
+|
+<b><a href=scripts/11_B_Experiment_3.ipynb>Training</a></b>
+|
+<b><a href=scripts/11_C_Experiment_3.ipynb>Test Results</a></b>
+</p>
+
+
+Another aspect of the heterogeneity of the dataset used in Experiment 1 is the tower size, which is an additional relevant factor for the composition of a potential training dataset. 
+To understand the ability of the network to model a dataset with homogeneous tower sizes, we first train and test multiple models for different tower sizes and compare the performance of the size-based models with the performance of the Experiment 1 models. Finally, we repeat the main experiment with datasets containing only large towers to test the model performance for larger objects in lower resolution imagery.
+
+![Timeline Experiment 3](figures/experiment_3_timeline.png)
+
+__Tower Size Models.__ The experiment results confirm the hypothesis that the model performs better for larger tower sizes compared to smaller towers, given constant resolution. Further, the results yield evidence that training models stratified by tower size can increase detection performance when the overall training dataset is skewed with regard to tower size. 
+
+![Tower Size Model Results](figures/exp3/test_evals_exp3_tower_size.png)
+
+__Resolution Model.__ The results indicate a generally higher model performance across all resolutions if the model is specified for large towers and especially higher performance for low-resolution imagery < 1 m/pixel.
+
+![Resolution Model Results](figures/exp3/final_test_scores_exp3.png)
+
 
 ## Results & Policy Implications
 
