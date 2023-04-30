@@ -99,11 +99,11 @@ The LOO results are further evidence of the models' inabilities to generalise ou
 ### Experiment 3
 
 <p align="center">
-<b><a href=scripts/11_A_Experiment_3.ipynb>Preprocessing</a></b>
+<b><a href=scripts/11_A_Experiment_3_Preprocessing.ipynb>Preprocessing</a></b>
 |
-<b><a href=scripts/11_B_Experiment_3.ipynb>Training</a></b>
+<b><a href=scripts/11_B_Experiment_3_Train.ipynb>Training</a></b>
 |
-<b><a href=scripts/11_C_Experiment_3.ipynb>Test Results</a></b>
+<b><a href=scripts/11_C_Experiment_3_Test.ipynb>Test Results</a></b>
 </p>
 
 
