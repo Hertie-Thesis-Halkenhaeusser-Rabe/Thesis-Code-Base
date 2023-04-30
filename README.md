@@ -5,7 +5,7 @@
 |
 <b><a href="#experiments">Experiments</a></b>
 |
-<b><a href="#results & policy implications">Results & Policy Implications</a></b>
+<b><a href="#results-and-policy-implications">Results and Policy Implications</a></b>
 </p>
 
 
@@ -121,7 +121,7 @@ __Resolution Model.__ The results indicate a generally higher model performance 
 ![Resolution Model Results](figures/exp3/final_test_scores_exp3.png)
 
 
-## Results & Policy Implications
+## Results and Policy Implications
 
 Extending existing research on electricity tower detection we demonstrate that even small energy infrastructure, which is more common in developing countries, can be automatically detected on high-resolution satellite imagery. With controlled experiments testing the effect of image resolution, we find that electricity tower detection on a large scale is only possible with commercial satellite imagery as the performance of our models has the steepest decline between 50 cm/pixel and 70 cm/pixel. With additional experiments we demonstrate that the detection performance of the model is highly sensitive to tower size, locational characteristics such as ground colour and the distribution of these features in the training data used. 
 
