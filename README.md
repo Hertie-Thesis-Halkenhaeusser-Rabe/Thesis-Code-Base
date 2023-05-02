@@ -15,7 +15,7 @@
 
 # The Impact of Image Resolution on Remote Sensing of Energy Infrastructure
 
-This repository contains the notebooks and information on our Master Thesis research - ["The Impact of Image Resolution on Remote Sensing of Energy Infrastructure"](https://github.com/LINKTOPDF.pdf). It does not contain any model checkpoints or the data due to their size. If you are interested in any of these, just get in touch.
+This repository contains the notebooks and information on our Master Thesis research - ["The Impact of Image Resolution on Remote Sensing of Energy Infrastructure"](Halkenhaeusser_Johannes_Rabe_Dinah_master_thesis.pdf). It does not contain any model checkpoints or the data due to their size. If you are interested in any of these, just get in touch.
 
 ## Summary
 
